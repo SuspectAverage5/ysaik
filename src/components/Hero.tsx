@@ -16,7 +16,7 @@ export const Hero = () => {
           <h1 className="text-5xl mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-blue-500 font-bold md:text-7xl">
             {aboutMe.name}
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-6">
+          <p className="text-xl mb-6 font-extrabold text-blue-500 md:text-4xl">
             {aboutMe.title}
           </p>
           <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
