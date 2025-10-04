@@ -22,11 +22,11 @@ export const ImageModal = ({ image, onClose }: ImageModalProps) => {
 
         <div className="flex flex-col md:flex-row h-full">
           {/* Image */}
-          <div className="flex-1 flex items-center justify-center p-6 bg-background/50">
+          <div className="flex-1 flex items-center justify-center p-6 bg-background/50 overflow-hidden">
             <img
               src={image.src}
               alt={image.title}
-              className="max-w-full max-h-full object-contain rounded-lg stellar-glow"
+              className="max-w-full max-h-[calc(90vh-3rem)] object-contain rounded-lg stellar-glow"
             />
           </div>
 
