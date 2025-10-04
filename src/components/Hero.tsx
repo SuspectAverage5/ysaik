@@ -30,11 +30,11 @@ export const Hero = () => {
         </div>
 
         {/* Equipment Toggle Button */}
-        <div className="max-w-6xl mx-auto relative">
+        <div className="max-w-6xl mx-auto">
           <Button 
             onClick={() => setShowEquipment(!showEquipment)}
             variant="outline"
-            className="absolute bottom-0 left-0"
+            className="mb-6"
           >
             {showEquipment ? "Hide Equipment Info" : "Show Equipment Info ->"}
           </Button>
