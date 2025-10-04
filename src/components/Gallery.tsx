@@ -28,7 +28,9 @@ export const Gallery = () => {
         </div>
       </div>;
   };
-  return <section className="container mx-auto px-4 py-20">
+  return <section className="relative">
+      <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-transparent via-background/50 to-background pointer-events-none" />
+      <div className="container mx-auto px-4 py-20 relative z-10">
       <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-gray-50 md:text-5xl text-center">
         Image Gallery
       </h2>
@@ -68,5 +70,6 @@ export const Gallery = () => {
 
       {/* Image Modal */}
       <ImageModal image={selectedImage} onClose={() => setSelectedImage(null)} />
+      </div>
     </section>;
 };
