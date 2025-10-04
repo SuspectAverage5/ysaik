@@ -1,5 +1,5 @@
 import { aboutMe, equipment } from "@/data/portfolio";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/M42.jpg";
 
 export const Hero = () => {
   return (
@@ -11,7 +11,7 @@ export const Hero = () => {
           backgroundImage: `url(${heroBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.3
+          opacity: 1
         }}
       />
       

@@ -50,7 +50,7 @@ export const Gallery = () => {
   return (
     <section className="container mx-auto px-4 py-20">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-        Gallery
+        Image Gallery
       </h2>
 
       {/* Filters */}
@@ -60,7 +60,7 @@ export const Gallery = () => {
             variant={activeFilter === "all" ? "default" : "outline"}
             onClick={() => handleFilterChange("all", null)}
           >
-            All Images
+            View All Images
           </Button>
         </div>
         

@@ -25,9 +25,9 @@ export interface EquipmentItem {
 
 // MODIFY THIS: Your personal information
 export const aboutMe = {
-  name: "Your Name",
-  title: "Amateur Astrophotographer",
-  description: "Capturing the cosmos through my telescope, one photon at a time. Passionate about deep-sky imaging and sharing the beauty of the universe.",
+  name: "Yasaik_",
+  title: "Amateur Astrophotography",
+  description: "See the cosmos through my eyes, one picture at a time. Passionate about deep-sky imaging and sharing the beauty of the universe.",
 };
 
 // MODIFY THIS: Your equipment showcase
@@ -36,25 +36,25 @@ export const equipment: EquipmentItem[] = [
     id: "1",
     name: "Telescope",
     image: "/placeholder.svg", // Replace with your equipment photo
-    description: "Your telescope model and specs"
+    description: 'Celestron EdgeHD 8"'
   },
   {
     id: "2",
     name: "Mount",
     image: "/placeholder.svg", // Replace with your equipment photo
-    description: "Your mount model and specs"
+    description: "SkyWatcher EQ6-R Pro"
   },
   {
     id: "3",
     name: "Camera",
     image: "/placeholder.svg", // Replace with your equipment photo
-    description: "Your camera model and specs"
+    description: "ZWO ASI2600MC Pro"
   },
   {
     id: "4",
     name: "Accessories",
     image: "/placeholder.svg", // Replace with your equipment photo
-    description: "Filters, guide scope, etc."
+    description: "Optolong L-eXtreme (filter)\nCelestron OAG & ZWO ASI 120mm Mini (guiding)\nZWO Asiair Plus (mini PC)"
   }
 ];
 
@@ -62,20 +62,21 @@ export const equipment: EquipmentItem[] = [
 export const images: ImageData[] = [
   {
     id: "1",
-    src: "/placeholder.svg", // Replace with your image
+    src: "src/assets/M42.jpg", // Replace with your image
     title: "Orion Nebula",
     tags: {
-      focalLength: "600mm",
+      focalLength: "2000mm",
       targetType: "Nebula",
-      equipment: "Refractor + DSLR",
+      equipment: "SCT + Cooled Astrocam",
       location: "Dark Sky Site"
     },
     exif: {
-      "Exposure": "2 hours (120x60s)",
-      "ISO": "800",
-      "Date": "2024-01-15",
+      "Exposure": "3 Hours (90x120s)",
+      "Date": "11-04-2024",
       "Filters": "None",
-      "Seeing": "Good (3/5)"
+      "Sky Darkness": "19 mag/arcsec²",
+      "Seeing": "Good (4/5)",
+      "Transparency": "Good (4/5)"
     }
   },
   {
@@ -83,17 +84,18 @@ export const images: ImageData[] = [
     src: "/placeholder.svg", // Replace with your image
     title: "Andromeda Galaxy",
     tags: {
-      focalLength: "400mm",
+      focalLength: "2000mm",
       targetType: "Galaxy",
-      equipment: "Refractor + DSLR",
+      equipment: "SCT + Cooled Astrocam",
       location: "Backyard"
     },
     exif: {
       "Exposure": "3 hours (180x60s)",
-      "ISO": "1600",
-      "Date": "2024-02-20",
-      "Filters": "Light Pollution",
-      "Seeing": "Average (2/5)"
+      "Date": "2024-03-15",
+      "Filters": "Optolong L-eXtreme",
+      "Sky Darkness": "21.5 mag/arcsec²",
+      "Seeing": "Good (5/5)",
+      "Transparency": "Good (5/5)"
     }
   },
   // Add more images here
