@@ -13,13 +13,13 @@ export const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 z-10 py-20">
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-5xl mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-blue-500 font-bold md:text-7xl">
+          <h1 className="text-5xl mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-blue-500 font-bold mx-0 md:text-7xl">
             {aboutMe.name}
           </h1>
           <p className="text-xl mb-6 font-extrabold text-blue-500 md:text-4xl">
             {aboutMe.title}
           </p>
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
+          <p className="max-w-2xl mx-auto text-lg font-semibold text-blue-100 text-center">
             {aboutMe.description}
           </p>
         </div>
