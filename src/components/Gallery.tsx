@@ -55,7 +55,7 @@ export const Gallery = () => {
             <div className="cosmic-border rounded-lg overflow-hidden aspect-square hover:stellar-glow transition-all duration-300">
               <img src={image.src} alt={image.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
             </div>
-            <h3 className="font-semibold mt-3 text-foreground group-hover:text-primary transition-colors text-xl text-center">
+            <h3 className="font-semibold mt-3 text-foreground group-hover:text-primary transition-colors text-xl text-left">
               {image.title}
             </h3>
             <div className="flex flex-wrap gap-2 mt-2">
