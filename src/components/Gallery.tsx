@@ -55,11 +55,11 @@ export const Gallery = () => {
             <div className="cosmic-border rounded-lg overflow-hidden aspect-square hover:stellar-glow transition-all duration-300">
               <img src={image.src} alt={image.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
             </div>
-            <h3 className="text-lg font-semibold mt-3 text-foreground group-hover:text-primary transition-colors">
+            <h3 className="font-semibold mt-3 text-foreground group-hover:text-primary transition-colors text-xl text-center">
               {image.title}
             </h3>
             <div className="flex flex-wrap gap-2 mt-2">
-              {Object.values(image.tags).filter(Boolean).slice(0, 2).map((tag, i) => <span key={i} className="text-xs px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
+              {Object.values(image.tags).filter(Boolean).slice(0, 2).map((tag, i) => <span key={i} className="px-2 py-1 rounded-full bg-secondary text-secondary-foreground text-sm">
                   {tag}
                 </span>)}
             </div>
