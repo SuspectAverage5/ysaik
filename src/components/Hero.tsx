@@ -26,9 +26,9 @@ export const Hero = () => {
 
         {/* Equipment Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {equipment.map((item, index) => <div key={item.id} className="cosmic-border rounded-lg p-6 hover:stellar-glow transition-all duration-300 animate-fade-in" style={{
+          {equipment.map((item, index) => <div key={item.id} style={{
           animationDelay: `${index * 100}ms`
-        }}>
+        }} className="cosmic-border p-6 hover:stellar-glow transition-all duration-300 animate-fade-in bg-blue-800 rounded-2xl px-[23px] py-[25px] mx-0 my-0">
               <div className="aspect-square rounded-lg overflow-hidden mb-4 bg-muted">
                 <img src={item.image} alt={item.name} className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
               </div>
