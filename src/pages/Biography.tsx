@@ -29,6 +29,11 @@ const Biography = () => {
                   Share what inspired you to start this amazing journey capturing the cosmos.
                 </p>
               </div>
+              <br></br>
+              <div className="border-t pt-6">
+                <h3 className="font-semibold mb-3 text-foreground text-xl">Socials</h3>
+                  <b className="text-l"><a href="https://www.instagram.com/yasaik_">Instagram @yasaik_ <br></br><br></br><img src="src/assets/watermark.png"></img></a></b>
+              </div>
             </div>
           </div>
         </section>

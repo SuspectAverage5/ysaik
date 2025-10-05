@@ -68,7 +68,7 @@ export const images: ImageData[] = [
       focalLength: "2000mm",
       targetType: "Nebula",
       equipment: "SCT + Cooled Astrocam",
-      location: "Dark Sky Site"
+      location: "Backyard"
     },
     exif: {
       "Exposure": "3 Hours (90x120s)",
@@ -87,12 +87,31 @@ export const images: ImageData[] = [
       focalLength: "2000mm",
       targetType: "Galaxy",
       equipment: "SCT + Cooled Astrocam",
-      location: "Backyard"
+      location: "Kfardebian, Lebanon"
     },
     exif: {
       "Exposure": "3 hours (180x60s)",
       "Date": "2024-03-15",
       "Filters": "Optolong L-eXtreme",
+      "Sky Darkness": "21.5 mag/arcsec²",
+      "Seeing": "Good (5/5)",
+      "Transparency": "Good (5/5)"
+    }
+  },
+  {
+    id: "3",
+    src: "src/assets/NZ7_3796 web.jpg",
+    title: "Arz Milky Way",
+    tags: {
+      focalLength: "16mm",
+      targetType: "Galaxy",
+      equipment: "Mirrorless Camera + Wide Angle Lens",
+      location: "Arz, Lebanon"
+    },
+    exif: {
+      "Exposure": "120s",
+      "Date": "8-24-2025",
+      "Filters": "None",
       "Sky Darkness": "21.5 mag/arcsec²",
       "Seeing": "Good (5/5)",
       "Transparency": "Good (5/5)"
