@@ -37,8 +37,10 @@ export const Hero = () => {
           <Link to="/gallery" className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
             <Button size="lg">View Image Gallery →</Button>
           </Link>
+          
         </div>
       </section>
+      <div className="elfsight-app-846269a5-8edf-476c-babe-2ae635de83b8" data-elfsight-app-lazy></div>
     </div>
   );
 };
