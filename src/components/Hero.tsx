@@ -9,7 +9,7 @@ export const Hero = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Hero Background */}
       <div className="absolute inset-0 z-0" style={{
-      backgroundImage: `url(${heroBg})`,
+      backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(7, 33, 61, 1) 100%), url(${heroBg})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       opacity: 1
@@ -36,7 +36,7 @@ export const Hero = () => {
             variant="outline"
             className="mb-6"
           >
-            {showEquipment ? "Hide Equipment Info" : "Show Equipment Info ->"}
+            {showEquipment ? "Hide Equipment Info <-" : "Show Equipment Info ->"}
           </Button>
           
           {/* Equipment Grid */}

@@ -35,25 +35,25 @@ export const equipment: EquipmentItem[] = [
   {
     id: "1",
     name: "Telescope",
-    image: "/placeholder.svg", // Replace with your equipment photo
+    image: "src/assets/edgehd8.jpg", // Replace with your equipment photo
     description: 'Celestron EdgeHD 8"'
   },
   {
     id: "2",
     name: "Mount",
-    image: "/placeholder.svg", // Replace with your equipment photo
+    image: "src/assets/eq6rpro.jpg", // Replace with your equipment photo
     description: "SkyWatcher EQ6-R Pro"
   },
   {
     id: "3",
     name: "Camera",
-    image: "/placeholder.svg", // Replace with your equipment photo
+    image: "src/assets/2600mcp.png", // Replace with your equipment photo
     description: "ZWO ASI2600MC Pro"
   },
   {
     id: "4",
     name: "Accessories",
-    image: "/placeholder.svg", // Replace with your equipment photo
+    image: "src/assets/lextreme.webp", // Replace with your equipment photo
     description: "Optolong L-eXtreme (filter)\nCelestron OAG & ZWO ASI 120mm Mini (guiding)\nZWO Asiair Plus (mini PC)"
   }
 ];

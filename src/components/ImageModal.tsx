@@ -76,7 +76,7 @@ export const ImageModal = ({ image, onClose }: ImageModalProps) => {
                 Notes
               </h3>
               <p className="text-sm text-foreground/70 italic">
-                Add your custom notes and observations here in the data file.
+                Please do not steal
               </p>
             </div>
           </div>
