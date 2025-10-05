@@ -51,9 +51,7 @@ export const Gallery = () => {
 
       {/* Image Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-        {filteredImages.map((image, index) => <div key={image.id} className="group cursor-pointer animate-fade-in" style={{
-        animationDelay: `${index * 50}ms`
-      }} onClick={() => setSelectedImage(image)}>
+        {filteredImages.map((image, index) => <div key={image.id} className="group cursor-pointer" onClick={() => setSelectedImage(image)}>
             <div className="cosmic-border rounded-lg overflow-hidden aspect-square hover:stellar-glow transition-all duration-300">
               <img src={image.src} alt={image.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
             </div>

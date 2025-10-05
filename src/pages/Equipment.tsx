@@ -11,11 +11,10 @@ const Equipment = () => {
             My Equipment
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {equipment.map((item, index) => (
+            {equipment.map((item) => (
               <div
                 key={item.id}
-                style={{ animationDelay: `${index * 100}ms` }}
-                className="cosmic-border p-6 hover:stellar-glow transition-all duration-300 animate-fade-in bg-blue-800 rounded-2xl"
+                className="cosmic-border p-6 hover:stellar-glow transition-all duration-300 bg-blue-800 rounded-2xl"
               >
                 <div className="aspect-square rounded-lg overflow-hidden mb-4 bg-muted">
                   <img
