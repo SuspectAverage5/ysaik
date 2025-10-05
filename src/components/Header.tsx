@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-primary/80 backdrop-blur-sm border-b">
       <nav className="container mx-auto px-4 py-3 flex gap-2 items-center">
         <Link to="/">
           <Button variant="ghost">Home</Button>
