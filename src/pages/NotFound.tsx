@@ -8,12 +8,12 @@ const NotFound = () => {
   }, [location.pathname]);
   return <div 
     className="flex min-h-screen items-center justify-center rounded-none bg-cover bg-center bg-no-repeat"
-    style={{ backgroundImage: "linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(7, 33, 61, 1) 100%), url('src/assets/M42.jpg')" }}
+    style={{ backgroundImage: "linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(7, 33, 61, 1) 75%), url('src/assets/M42.jpg')" }}
   >
       <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">404</h1>
-        <p className="mb-4 text-xl text-gray-600">Oops! The star system <b><a href="/" class-name="text-blue-500 underline hover:text-blue-700">{fullURL}</a></b> doesn't seem to exist. Did you mistype the URL?</p>
-        <a href="/" className="text-blue-500 underline hover:text-blue-700">
+        <h1 className="mb-4 text-5xl font-bold">404</h1>
+        <p className="mb-4 text-xl text-blue-500">Oops! The star system <b><a href="/" class-name="text-blue-500 underline hover:text-blue-700">{fullURL}</a></b> doesn't seem to exist. Did you mistype the URL?</p>
+        <a href="/" className="text-xl text-blue-500 underline hover:text-blue-700">
           Return to Home (root URL)
         </a>
       </div>

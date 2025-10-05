@@ -15,6 +15,7 @@ export const Header = () => {
         <Link to="/biography">
           <Button variant="ghost">Biography</Button>
         </Link>
+        <a href="https://www.instagram.com/yasaik_" className="fixed right-5"><img src="src/assets/watermark.png" width="128" height="128"></img></a>
       </nav>
     </header>;
 };

@@ -12,7 +12,7 @@ const Biography = () => {
             <div className="bg-card p-8 rounded-2xl shadow-lg">
               <h2 className="mb-4 text-foreground flex items-center gap-3 font-semibold text-3xl">
                 {aboutMe.name}
-                <img src="/favicon.ico" alt="favicon" className="w-8 h-8" />
+                <img src="/favicon.ico" alt="favicon" className="w-8 h-8 rounded-xl"/>
               </h2>
               <p className="text-muted-foreground mb-4 text-xl">
                 {aboutMe.title}
