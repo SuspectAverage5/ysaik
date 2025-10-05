@@ -2,14 +2,30 @@ import { useState } from "react";
 import { images, filterCategories } from "@/data/portfolio";
 import { ImageModal } from "./ImageModal";
 import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { Search } from "lucide-react";
+
 type FilterType = "all" | "focalLength" | "targetType" | "equipment" | "location";
+
 export const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<typeof images[0] | null>(null);
   const [activeFilter, setActiveFilter] = useState<FilterType>("all");
   const [activeTag, setActiveTag] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
   const filteredImages = images.filter(img => {
-    if (activeFilter === "all" || !activeTag) return true;
-    return img.tags[activeFilter] === activeTag;
+    // Filter by active tag
+    const matchesFilter = activeFilter === "all" || !activeTag || img.tags[activeFilter] === activeTag;
+    
+    // Filter by search query
+    if (!searchQuery.trim()) return matchesFilter;
+    
+    const searchTerms = searchQuery.toLowerCase().split(',').map(term => term.trim()).filter(Boolean);
+    const matchesSearch = searchTerms.some(term => {
+      return img.title.toLowerCase().includes(term) ||
+        Object.values(img.tags).some(tag => tag?.toLowerCase().includes(term));
+    });
+    
+    return matchesFilter && matchesSearch;
   });
   const handleFilterChange = (filterType: FilterType, tag: string | null) => {
     setActiveFilter(filterType);
@@ -34,6 +50,20 @@ export const Gallery = () => {
       <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-gray-50 md:text-5xl text-center">
         Image Gallery
       </h2>
+
+      {/* Search Bar */}
+      <div className="max-w-2xl mx-auto mb-8">
+        <div className="relative">
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />
+          <Input
+            type="text"
+            placeholder="Search by target name or tags (comma-separated)..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="pl-10 py-6 text-base"
+          />
+        </div>
+      </div>
 
       {/* Filters */}
       <div className="max-w-4xl mx-auto mb-12 space-y-4">
