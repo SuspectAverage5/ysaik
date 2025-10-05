@@ -12,8 +12,9 @@ const Biography = () => {
               About Me
             </h1>
             <div className="bg-card p-8 rounded-2xl shadow-lg">
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">
+              <h2 className="text-2xl font-semibold mb-4 text-foreground flex items-center gap-3">
                 {aboutMe.name}
+                <img src="/favicon.ico" alt="favicon" className="w-8 h-8" />
               </h2>
               <p className="text-lg text-muted-foreground mb-4">
                 {aboutMe.title}
