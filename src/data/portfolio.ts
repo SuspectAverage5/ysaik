@@ -163,6 +163,25 @@ export const images: ImageData[] = [
       "Transparency": "Good (5/5)"
     }
   },
+  {
+    id: "4",
+    src: "src/assets/ngc_6946.jpg",
+    title: "Fireworks Galaxy (NGC 6946)",
+    tags: {
+      focalLength: "2000mm",
+      targetType: "Galaxy",
+      equipment: "SCT + Cooled Astrocam",
+      location: "Arz, Lebanon"
+    },
+    exif: {
+      "Exposure": "1h20 (40x120s)",
+      "Date": "8-24-2025",
+      "Filters": "None",
+      "Sky Darkness": "21.5 mag/arcsec²",
+      "Seeing": "Good (5/5)",
+      "Transparency": "Good (5/5)"
+    }
+  }
   // Add more images here
 ];
 
