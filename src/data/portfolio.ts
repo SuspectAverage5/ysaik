@@ -46,7 +46,7 @@ export const equipment: EquipmentItem[] = [
   },
   {
     id: "3",
-    name: "Camera",
+    name: "Astro Camera",
     image: "src/assets/2600mcp.png", // Replace with your equipment photo
     description: "ZWO ASI2600MC Pro"
   },
@@ -55,6 +55,18 @@ export const equipment: EquipmentItem[] = [
     name: "Accessories",
     image: "src/assets/lextreme.webp", // Replace with your equipment photo
     description: "Optolong L-eXtreme (filter)\nCelestron OAG & ZWO ASI 120mm Mini (guiding)\nZWO Asiair Plus (mini PC)"
+  },
+  {
+    id: "5",
+    name: "Camera",
+    image: "src/assets/z7ii.webp",
+    description: "Nikon Z7II"
+  },
+  {
+    id: "6",
+    name: "Star Tracker",
+    image: "src/assets/sw2i.webp",
+    description: "SkyWatcher Adventurer 2i Pro"
   }
 ];
 

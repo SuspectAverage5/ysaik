@@ -104,3 +104,5 @@ All colors MUST be HSL.
     background: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
   }
 }
+
+a[title=""] { display:none !important; }
