@@ -70,6 +70,34 @@ export const equipment: EquipmentItem[] = [
   }
 ];
 
+// MODIFY THIS: Your processing software
+export const software: EquipmentItem[] = [
+  {
+    id: "1",
+    name: "PixInsight",
+    image: "/placeholder.svg",
+    description: "Advanced image processing"
+  },
+  {
+    id: "2",
+    name: "Adobe Photoshop",
+    image: "/placeholder.svg",
+    description: "Final touches and adjustments"
+  },
+  {
+    id: "3",
+    name: "Siril",
+    image: "/placeholder.svg",
+    description: "Stacking and calibration"
+  },
+  {
+    id: "4",
+    name: "DeepSkyStacker",
+    image: "/placeholder.svg",
+    description: "Image stacking"
+  }
+];
+
 // MODIFY THIS: Your astrophotography images
 export const images: ImageData[] = [
   {
