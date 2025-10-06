@@ -43,7 +43,7 @@ const Equipment = () => {
                 key={item.id}
                 className="cosmic-border p-6 hover:stellar-glow transition-all duration-300 bg-blue-800 rounded-2xl"
               >
-                <div className="aspect-square rounded-lg overflow-hidden mb-4 bg-white">
+                <div className="aspect-square rounded-lg overflow-hidden mb-4 ">
                   <img
                     src={item.image}
                     alt={item.name}

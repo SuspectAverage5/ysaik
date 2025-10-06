@@ -54,16 +54,22 @@ export const equipment: EquipmentItem[] = [
     id: "4",
     name: "Accessories",
     image: "src/assets/lextreme.webp", // Replace with your equipment photo
-    description: "Optolong L-eXtreme (filter)\nCelestron OAG & ZWO ASI 120mm Mini (guiding)\nZWO Asiair Plus (mini PC)"
+    description: "Optolong L-eXtreme (filter)\nCelestron OAG & ZWO ASI 120mm Mini (guiding)"
   },
   {
     id: "5",
+    name: "ZWO Asiair Plus",
+    image: "src/assets/asiair.jpg",
+    description: "Mini PC that controls everything"
+  },
+  {
+    id: "6",
     name: "Camera",
     image: "src/assets/z7ii.webp",
     description: "Nikon Z7II"
   },
   {
-    id: "6",
+    id: "7",
     name: "Star Tracker",
     image: "src/assets/sw2i.webp",
     description: "SkyWatcher Adventurer 2i Pro"
@@ -74,27 +80,27 @@ export const equipment: EquipmentItem[] = [
 export const software: EquipmentItem[] = [
   {
     id: "1",
-    name: "PixInsight",
-    image: "/placeholder.svg",
-    description: "Advanced image processing"
+    name: "DeepSkyStacker",
+    image: "src/assets/dss.webp",
+    description: "Image stacking"
   },
   {
     id: "2",
-    name: "Adobe Photoshop",
-    image: "/placeholder.svg",
-    description: "Final touches and adjustments"
+    name: "PixInsight",
+    image: "src/assets/pix.png",
+    description: "Advanced image processing"
   },
   {
     id: "3",
-    name: "Siril",
-    image: "/placeholder.svg",
-    description: "Stacking and calibration"
+    name: "Adobe Photoshop",
+    image: "src/assets/ps.png",
+    description: "Final touches and adjustments"
   },
   {
     id: "4",
-    name: "DeepSkyStacker",
-    image: "/placeholder.svg",
-    description: "Image stacking"
+    name: "Siril",
+    image: "src/assets/siril.png",
+    description: "Free Alternative to PixInsight"
   }
 ];
 
