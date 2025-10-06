@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 export const Header = () => {
   return <header className="fixed top-0 left-0 right-0 z-50 bg-[#112a4d]/[0.63] backdrop-blur-sm border-b">
-      <nav className="container mx-auto px-4 py-3 flex gap-2 items-center rounded-none">
+      <nav className="container mx-auto px-4 py-3 flex flex-wrap gap-2 items-center rounded-none">
         <Link to="/">
           <Button variant="ghost">Home</Button>
         </Link>
@@ -15,7 +15,9 @@ export const Header = () => {
         <Link to="/biography">
           <Button variant="ghost">Biography</Button>
         </Link>
-        <a href="https://www.instagram.com/yasaik_" className="fixed right-5"><img src="src/assets/watermark.png" width="128" height="128"></img></a>
+        <a href="https://www.instagram.com/yasaik_" className="ml-auto">
+          <img src="src/assets/watermark.png" width="64" height="64" className="md:w-32 md:h-32" alt="Instagram" />
+        </a>
       </nav>
     </header>;
 };
