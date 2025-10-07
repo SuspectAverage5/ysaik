@@ -4,6 +4,7 @@ import { ImageModal } from "./ImageModal";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Search } from "lucide-react";
+import watermark from "@/assets/watermark.png";
 
 type FilterType = "all" | "focalLength" | "targetType" | "equipment" | "location";
 
@@ -82,8 +83,9 @@ export const Gallery = () => {
       {/* Image Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {filteredImages.map((image, index) => <div key={image.id} className="group cursor-pointer" onClick={() => setSelectedImage(image)}>
-            <div className="cosmic-border rounded-lg overflow-hidden aspect-square hover:stellar-glow transition-all duration-300">
+            <div className="cosmic-border rounded-lg overflow-hidden aspect-square hover:stellar-glow transition-all duration-300 relative">
               <img src={image.src} alt={image.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img src={watermark} alt="Watermark" className="absolute bottom-2 right-2 w-16 h-16 opacity-50 pointer-events-none" />
             </div>
             <h3 className="font-semibold mt-3 text-foreground group-hover:text-primary transition-colors text-xl text-left">
               {image.title}
