@@ -37,7 +37,7 @@ export const Hero = () => {
             </p>
           </div>
           <Link to="/gallery" className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-            <Button size="lg">View Image Gallery →</Button>
+            <Button size="lg" className="text-white">View Image Gallery →</Button>
           </Link>
           
         </div>
