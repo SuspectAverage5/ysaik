@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export const Hero = () => {
   
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen animate-fade-in">
       <Header />
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Hero Background */}
