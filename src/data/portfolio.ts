@@ -27,7 +27,7 @@ export interface EquipmentItem {
 export const aboutMe = {
   name: "Yasaik_",
   title: "Amateur Astrophotography",
-  description: "See the cosmos through my eyes, one picture at a time. Passionate about deep-sky imaging and sharing the beauty of the universe.",
+  description: "See the cosmos through my eyes, one picture at a time. Discover deep-sky imaging and night sky photography while shedding light on the beauty of the universe.",
 };
 
 // MODIFY THIS: Your equipment showcase

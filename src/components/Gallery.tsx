@@ -85,7 +85,7 @@ export const Gallery = () => {
         {filteredImages.map((image, index) => <div key={image.id} className="group cursor-pointer" onClick={() => setSelectedImage(image)}>
             <div className="cosmic-border rounded-lg overflow-hidden aspect-square hover:stellar-glow transition-all duration-300 relative">
               <img src={image.src} alt={image.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-              <img src={watermark} alt="Watermark" className="absolute bottom-2 right-2 w-16 h-16 opacity-50 pointer-events-none" />
+              <img src={watermark} alt="Watermark" className="absolute bottom-2 right-2 md:w-30% md:h-30% opacity-25 pointer-events-none" width="30%" height="30%" />
             </div>
             <h3 className="font-semibold mt-3 text-foreground group-hover:text-primary transition-colors text-xl text-left">
               {image.title}
