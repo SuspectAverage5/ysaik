@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 
 const Equipment = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-muted">
+    <div className="min-h-screen bg-gradient-to-b from-background to-muted animate-fade-in">
       <Header />
       <div className="pt-16">
         <section className="container mx-auto px-4 py-20">

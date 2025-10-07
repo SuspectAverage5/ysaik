@@ -3,7 +3,7 @@ import { aboutMe } from "@/data/portfolio";
 import { Link } from "react-router-dom";
 
 const Biography = () => {
-  return <div className="min-h-screen bg-gradient-to-b from-background to-muted">
+  return <div className="min-h-screen bg-gradient-to-b from-background to-muted animate-fade-in">
       <Header />
       <div className="pt-16">
         <section className="container mx-auto px-4 py-20 bg-inherit rounded-none">

@@ -7,7 +7,7 @@ const NotFound = () => {
     console.error("404 Error: User attempted to access non-existent route:", location.pathname, "in", fullURL);
   }, [location.pathname]);
   return <div 
-    className="flex min-h-screen items-center justify-center rounded-none bg-cover bg-center bg-no-repeat"
+    className="flex min-h-screen items-center justify-center rounded-none bg-cover bg-center bg-no-repeat animate-fade-in"
     style={{ backgroundImage: "linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(7, 33, 61, 1) 75%), url('src/assets/M42.jpg')" }}
   >
       <div className="text-center">
