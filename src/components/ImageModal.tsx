@@ -89,24 +89,24 @@ export const ImageModal = ({ image, onClose }: ImageModalProps) => {
       </DialogContent>
     </Dialog>
 
-    {/* Fullscreen Image Dialog */}
-    <Dialog open={showFullscreen} onOpenChange={setShowFullscreen}>
-      <DialogContent className="max-w-[100vw] w-full h-screen p-0 bg-background/95 border-0">
-        <button
-          onClick={() => setShowFullscreen(false)}
-          className="absolute right-4 top-4 z-50 rounded-full p-2 bg-background/80 hover:bg-background transition-colors"
-        >
-          <X className="h-6 w-6" />
-        </button>
-        <div className="flex items-center justify-center w-full h-full p-4">
-          <img
-            src={image.src}
-            alt={image.title}
-            className="max-w-full max-h-full object-contain"
-          />
-        </div>
-      </DialogContent>
-    </Dialog>
+      {/* Fullscreen Image Dialog */}
+      <Dialog open={showFullscreen} onOpenChange={setShowFullscreen}>
+        <DialogContent className="max-w-[100vw] w-full h-[100vh] p-0 bg-background/95 border-0 flex flex-col">
+          <button
+            onClick={() => setShowFullscreen(false)}
+            className="absolute right-4 top-4 z-50 rounded-full p-2 bg-background/80 hover:bg-background transition-colors"
+          >
+            <X className="h-6 w-6" />
+          </button>
+          <div className="flex items-center justify-center w-full flex-1 p-8">
+            <img
+              src={image.src}
+              alt={image.title}
+              className="max-w-full max-h-full object-contain"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
     </>
   );
 };
