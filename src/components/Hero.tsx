@@ -28,7 +28,9 @@ export const Hero = () => {
               {aboutMe.name}
             </h1>
             <p className="text-xl mb-6 font-extrabold text-blue-500 md:text-4xl">
+              <Link to="/biography" className="bottom-8 left-1/2 transform -translate-x-1/2 z-20 hover:text-blue-300 transition-all duration-600 rounded-full">
               {aboutMe.title}
+              </Link>
             </p>
             <p className="max-w-2xl mx-auto text-lg font-semibold text-blue-100 text-center">
               {aboutMe.description}

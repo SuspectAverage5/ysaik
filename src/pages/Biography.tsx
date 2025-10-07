@@ -22,16 +22,15 @@ const Biography = () => {
               </p>
               <div className="border-t pt-6">
                 <h3 className="font-semibold mb-3 text-foreground text-xl">
-                  My Journey
+                  What is "Astrophotography"?
                 </h3>
                 <p className="text-muted-foreground text-lg">
-                  Add your personal story, background, and passion for astrophotography here.
-                  Share what inspired you to start this amazing journey capturing the cosmos.
+                  Astrophotography is the practice of photographing celestial objects and phenomena in the night sky, such as stars, planets, galaxies, nebulae and comets. It combines astronomy and photography to capture images that reveal details and colors often invisible to the naked eye. It can be done with a smartphone, a DSLR (or mirrorless) camera, or even dedicated professional equipment.
                 </p>
               </div>
               <br></br>
               <div className="border-t pt-6">
-                <h3 className="font-semibold mb-3 text-foreground text-xl">Socials</h3>
+                <h3 className="font-semibold mb-3 text-foreground text-xl">Where you can see more of my work</h3>
                   <b className="text-l"><a href="https://www.instagram.com/yasaik_">Instagram @yasaik_ <br></br><br></br><img src="src/assets/watermark.png"></img></a></b>
               </div>
             </div>
