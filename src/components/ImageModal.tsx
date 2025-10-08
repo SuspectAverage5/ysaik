@@ -98,7 +98,7 @@ export const ImageModal = ({ image, onClose }: ImageModalProps) => {
           >
             <X className="h-6 w-6" />
           </button>
-          <div className="flex items-center justify-center w-full flex-1 p-8">
+          <div className="flex items-center justify-center w-full flex-1 p-2 md:p-4">
             <img
               src={image.src}
               alt={image.title}
