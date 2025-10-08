@@ -91,7 +91,7 @@ export const ImageModal = ({ image, onClose }: ImageModalProps) => {
 
       {/* Fullscreen Image Dialog */}
       <Dialog open={showFullscreen} onOpenChange={setShowFullscreen}>
-        <DialogContent className="max-w-[100vw] w-full h-[100vh] p-0 bg-background/95 border-0 flex flex-col">
+        <DialogContent className="max-w-[75%] w-full h-[200vh] p-0 bg-background/95 border-0 flex flex-col">
           <button
             onClick={() => setShowFullscreen(false)}
             className="absolute right-4 top-4 z-50 rounded-full p-2 bg-background/80 hover:bg-background transition-colors"

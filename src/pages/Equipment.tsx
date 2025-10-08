@@ -61,7 +61,8 @@ const Equipment = () => {
           </div>
         </section>
       </div>
-    </div>
+      <footer className="text-sm text-muted-foreground whitespace-pre-line text-center"><i>All trademarks and logos are the property of their respective owners. This website is not affiliated with or endorsed by any of the mentioned software companies. Logos are used for informational purposes only.</i></footer>
+      </div>
   );
 };
 

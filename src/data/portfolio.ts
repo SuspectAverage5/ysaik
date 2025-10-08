@@ -52,24 +52,30 @@ export const equipment: EquipmentItem[] = [
   },
   {
     id: "4",
-    name: "Accessories",
-    image: "src/assets/lextreme.webp", // Replace with your equipment photo
-    description: "Optolong L-eXtreme (filter)\nCelestron OAG & ZWO ASI 120mm Mini (guiding)"
+    name: "Guiding System",
+    image: "src/assets/guiding.jpg", // Replace with your equipment photo
+    description: "Celestron OAG & ZWO ASI 120mm Mini"
   },
   {
     id: "5",
-    name: "ZWO Asiair Plus",
-    image: "src/assets/asiair.jpg",
-    description: "Mini PC that controls everything"
+    name: "Light Pollution Filter",
+    image: "src/assets/lextreme.webp", // Replace with your equipment photo
+    description: "Optolong L-eXtreme (Dual-Band filter)"
   },
   {
     id: "6",
+    name: "ZWO Asiair Plus",
+    image: "src/assets/asiair.jpg",
+    description: "Wireless Mini PC that controls everything"
+  },
+  {
+    id: "7",
     name: "Camera",
     image: "src/assets/z7ii.webp",
     description: "Nikon Z7II"
   },
   {
-    id: "7",
+    id: "8",
     name: "Star Tracker",
     image: "src/assets/sw2i.webp",
     description: "SkyWatcher Adventurer 2i Pro"
@@ -127,21 +133,21 @@ export const images: ImageData[] = [
   },
   {
     id: "2",
-    src: "/placeholder.svg", // Replace with your image
-    title: "Andromeda Galaxy",
+    src: "src/assets/m51.jpg", // Replace with your image
+    title: "Whirlpool Galaxy (M51)",
     tags: {
       focalLength: "2000mm",
       targetType: "Galaxy",
       equipment: "SCT + Cooled Astrocam",
-      location: "Kfardebian, Lebanon"
+      location: "Backyard"
     },
     exif: {
-      "Exposure": "3 hours (180x60s)",
+      "Exposure": "4h20 (130x120s)",
       "Date": "2024-03-15",
-      "Filters": "Optolong L-eXtreme",
-      "Sky Darkness": "21.5 mag/arcsec²",
+      "Filters": "None",
+      "Sky Darkness": "19 mag/arcsec²",
       "Seeing": "Good (5/5)",
-      "Transparency": "Good (5/5)"
+      "Transparency": "Good (4/5)"
     }
   },
   {
