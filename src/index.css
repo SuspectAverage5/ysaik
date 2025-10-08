@@ -105,4 +105,8 @@ All colors MUST be HSL.
   }
 }
 
-a[title=""] { display:none !important; }
+/* a[title=""] { display:none !important; } */
+
+::-webkit-scrollbar {
+    display: none;
+}

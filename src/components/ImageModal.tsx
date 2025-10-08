@@ -30,7 +30,7 @@ export const ImageModal = ({ image, onClose }: ImageModalProps) => {
               <img
                 src={image.src}
                 alt={image.title}
-                className="max-w-full max-h-[calc(90vh-3rem)] object-contain rounded-lg stellar-glow cursor-pointer hover:opacity-90 transition-opacity"
+                className="max-w-full max-h-[calc(90vh-3rem)] object-contain rounded-lg stellar-glow cursor-pointer transition-opacity"
                 onClick={() => setShowFullscreen(true)}
               />
             </div>
