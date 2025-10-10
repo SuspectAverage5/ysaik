@@ -20,7 +20,9 @@ const Equipment = () => {
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                    className={`w-full h-full hover:scale-110 transition-transform duration-300 ${
+                      item.id === "4" ? "object-contain" : "object-cover"
+                    }`}
                   />
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-foreground">
