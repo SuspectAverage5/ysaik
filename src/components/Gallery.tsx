@@ -5,9 +5,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Search } from "lucide-react";
 import watermark from "@/assets/watermark.png";
-
 type FilterType = "all" | "focalLength" | "targetType" | "equipment" | "location";
-
 export const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<typeof images[0] | null>(null);
   const [activeFilter, setActiveFilter] = useState<FilterType>("all");
@@ -16,16 +14,13 @@ export const Gallery = () => {
   const filteredImages = images.filter(img => {
     // Filter by active tag
     const matchesFilter = activeFilter === "all" || !activeTag || img.tags[activeFilter] === activeTag;
-    
+
     // Filter by search query
     if (!searchQuery.trim()) return matchesFilter;
-    
     const searchTerms = searchQuery.toLowerCase().split(',').map(term => term.trim()).filter(Boolean);
     const matchesSearch = searchTerms.some(term => {
-      return img.title.toLowerCase().includes(term) ||
-        Object.values(img.tags).some(tag => tag?.toLowerCase().includes(term));
+      return img.title.toLowerCase().includes(term) || Object.values(img.tags).some(tag => tag?.toLowerCase().includes(term));
     });
-    
     return matchesFilter && matchesSearch;
   });
   const handleFilterChange = (filterType: FilterType, tag: string | null) => {
@@ -56,20 +51,14 @@ export const Gallery = () => {
       <div className="max-w-2xl mx-auto mb-8">
         <div className="relative">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />
-          <Input
-            type="text"
-            placeholder="Search by target name or tags (comma-separated)..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="pl-10 py-6 text-base"
-          />
+          <Input type="text" placeholder="Search by target name or tags (comma-separated)..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)} className="pl-10 py-6 text-base" />
         </div>
       </div>
 
       {/* Filters */}
       <div className="max-w-4xl mx-auto mb-12 space-y-4">
         <div className="flex justify-center mb-6">
-          <Button variant={activeFilter === "all" ? "default" : "outline"} onClick={() => handleFilterChange("all", null)} className="rounded-xl text-center font-normal text-base">
+          <Button variant={activeFilter === "all" ? "default" : "outline"} onClick={() => handleFilterChange("all", null)} className="rounded-xl font-normal text-base text-center text-slate-50">
             View All Images
           </Button>
         </div>
@@ -85,7 +74,7 @@ export const Gallery = () => {
         {filteredImages.map((image, index) => <div key={image.id} className="group cursor-pointer" onClick={() => setSelectedImage(image)}>
             <div className="cosmic-border rounded-lg overflow-hidden aspect-square hover:stellar-glow transition-all duration-300 relative">
               <img src={image.src} alt={image.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-              {/* <img src={watermark} alt="Watermark" className="absolute bottom-2 right-2 md:w-30% md:h-30% opacity-25 pointer-events-none" width="30%" height="30%" /> */}
+              <img src={watermark} alt="Watermark" className="absolute bottom-2 right-2 md:w-30% md:h-30% opacity-25 pointer-events-none" width="30%" height="30%" />
             </div>
             <h3 className="font-semibold mt-3 text-foreground group-hover:text-primary transition-colors text-xl text-left">
               {image.title}
