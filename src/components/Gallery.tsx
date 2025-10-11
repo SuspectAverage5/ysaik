@@ -90,12 +90,11 @@ export const Gallery = () => {
       {/* Image Modal */}
       <ImageModal image={selectedImage} onClose={() => setSelectedImage(null)} />
         <div className="h-[2px] bg-gradient-to-r from-primary via-accent to-primary mx-auto w-full max-w-3xl"></div>
-        <br></br><h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
         Panoramas
         </h2>
-        <br></br>
         <div className="flex justify-center">
-          <iframe className="w-[80%] h-[50vh]" src="https://momento360.com/e/u/9d58fd642a174f0d9922f82245b6c6a8?utm_campaign=embed&utm_source=other&heading=228.54&pitch=17.05&field-of-view=62&size=medium&display-plan=true"></iframe>
+          <iframe className="w-[95%] h-[80vh] rounded-xl" src="https://momento360.com/e/u/9d58fd642a174f0d9922f82245b6c6a8?utm_campaign=embed&utm_source=other&heading=228.54&pitch=17.05&field-of-view=62&size=medium&display-plan=true"></iframe>
         </div>
       </div>
     </section>;
