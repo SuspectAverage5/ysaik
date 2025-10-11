@@ -11,14 +11,6 @@ interface ImageModalProps {
 export const ImageModal = ({ image, onClose }: ImageModalProps) => {
   const [showFullscreen, setShowFullscreen] = useState(false);
   const [zoomLevel, setZoomLevel] = useState(1.5);
-  const [mousePos, setMousePos] = useState({ x: 50, y: 50 });
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLImageElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
-    setMousePos({ x, y });
-  };
 
   const handleWheel = (e: React.WheelEvent<HTMLImageElement>) => {
     e.preventDefault();
@@ -50,9 +42,7 @@ export const ImageModal = ({ image, onClose }: ImageModalProps) => {
                 className="max-w-full max-h-[calc(90vh-3rem)] object-contain rounded-lg stellar-glow cursor-pointer transition-all duration-300"
                 style={{
                   transform: `scale(${zoomLevel})`,
-                  transformOrigin: `${mousePos.x}% ${mousePos.y}%`
                 }}
-                onMouseMove={handleMouseMove}
                 onWheel={handleWheel}
                 onClick={() => setShowFullscreen(true)}
               />
