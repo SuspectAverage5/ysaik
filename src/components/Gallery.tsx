@@ -89,7 +89,7 @@ export const Gallery = () => {
 
       {/* Image Modal */}
       <ImageModal image={selectedImage} onClose={() => setSelectedImage(null)} />
-        <div className="h-[2px] bg-gradient-to-r from-primary via-accent to-primary mx-auto w-full max-w-3xl p-[30px]"></div>
+        <div className="h-[2px] bg-gradient-to-r from-primary via-accent to-primary mx-auto w-full max-w-3xl"></div>
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
         Panoramas
         </h2>
