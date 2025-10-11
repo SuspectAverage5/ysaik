@@ -93,6 +93,9 @@ export const Gallery = () => {
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
         Panoramas
         </h2>
+        <h3 className="font-semibold mt-3 text-foreground group-hover:text-primary transition-colors text-xl text-center">
+              Ariz, Lebanon
+        </h3>
         <div className="flex justify-center">
           <iframe className="w-[95%] h-[80vh] rounded-xl" src="https://momento360.com/e/u/9d58fd642a174f0d9922f82245b6c6a8?utm_campaign=embed&utm_source=other&heading=228.54&pitch=17.05&field-of-view=62&size=medium&display-plan=true" allowFullScreen allow="fullscreen"></iframe>
         </div>
