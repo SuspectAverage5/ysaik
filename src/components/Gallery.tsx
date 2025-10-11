@@ -94,7 +94,9 @@ export const Gallery = () => {
         Panoramas
         </h2>
         <br></br>
-        <center><iframe width="1280" height="840" src="https://momento360.com/e/u/9d58fd642a174f0d9922f82245b6c6a8?utm_campaign=embed&utm_source=other&heading=228.54&pitch=17.05&field-of-view=62&size=medium&display-plan=true"></iframe></center>
+        <div className="flex justify-center">
+          <iframe className="w-[80%] h-[50vh]" src="https://momento360.com/e/u/9d58fd642a174f0d9922f82245b6c6a8?utm_campaign=embed&utm_source=other&heading=228.54&pitch=17.05&field-of-view=62&size=medium&display-plan=true"></iframe>
+        </div>
       </div>
     </section>;
 };
