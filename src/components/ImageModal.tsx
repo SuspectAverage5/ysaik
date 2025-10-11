@@ -11,9 +11,6 @@ interface ImageModalProps {
 export const ImageModal = ({ image, onClose }: ImageModalProps) => {
   const [showFullscreen, setShowFullscreen] = useState(false);
   const [zoomLevel, setZoomLevel] = useState(1.5);
-  const [panOffset, setPanOffset] = useState({ x: 0, y: 0 });
-  const [isDragging, setIsDragging] = useState(false);
-  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
 
   const handleWheel = (e: React.WheelEvent<HTMLImageElement>) => {
     e.preventDefault();
@@ -21,24 +18,6 @@ export const ImageModal = ({ image, onClose }: ImageModalProps) => {
       const newZoom = prev + (e.deltaY > 0 ? -0.1 : 0.1);
       return Math.max(1, Math.min(3, newZoom));
     });
-  };
-
-  const handleMouseDown = (e: React.MouseEvent<HTMLImageElement>) => {
-    setIsDragging(true);
-    setDragStart({ x: e.clientX - panOffset.x, y: e.clientY - panOffset.y });
-  };
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLImageElement>) => {
-    if (isDragging) {
-      setPanOffset({
-        x: e.clientX - dragStart.x,
-        y: e.clientY - dragStart.y,
-      });
-    }
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
   };
   
   if (!image) return null;
@@ -60,16 +39,12 @@ export const ImageModal = ({ image, onClose }: ImageModalProps) => {
               <img
                 src={image.src}
                 alt={image.title}
-                className="max-w-full max-h-[calc(90vh-3rem)] object-contain rounded-lg stellar-glow cursor-grab active:cursor-grabbing transition-all duration-300"
+                className="max-w-full max-h-[calc(90vh-3rem)] object-contain rounded-lg stellar-glow cursor-pointer transition-all duration-300"
                 style={{
-                  transform: `scale(${zoomLevel}) translate(${panOffset.x / zoomLevel}px, ${panOffset.y / zoomLevel}px)`,
+                  transform: `scale(${zoomLevel})`,
                 }}
                 onWheel={handleWheel}
-                onMouseDown={handleMouseDown}
-                onMouseMove={handleMouseMove}
-                onMouseUp={handleMouseUp}
-                onMouseLeave={handleMouseUp}
-                onClick={() => !isDragging && setShowFullscreen(true)}
+                onClick={() => setShowFullscreen(true)}
               />
             </div>
 
