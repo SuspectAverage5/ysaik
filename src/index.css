@@ -110,3 +110,10 @@ All colors MUST be HSL.
 ::-webkit-scrollbar {
     display: none;
 }
+
+hr {
+  /* color: var(--foreground) !important; */
+  padding-top: 15px;
+  border-top: 3px solid linear-gradient(135deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
+  border-style: dotted;
+}

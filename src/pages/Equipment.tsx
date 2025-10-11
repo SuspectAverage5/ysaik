@@ -21,7 +21,7 @@ const Equipment = () => {
                     src={item.image}
                     alt={item.name}
                     className={`w-full h-full hover:scale-110 transition-transform duration-300 ${
-                      item.id === "4" ? "object-contain" : "object-cover"
+                      item.id === "4" || item.id === "7" ? "object-contain" : "object-cover"
                     }`}
                   />
                 </div>
@@ -63,7 +63,7 @@ const Equipment = () => {
           </div>
         </section>
       </div>
-      <footer className="text-sm text-muted-foreground whitespace-pre-line text-center"><i>All trademarks and logos are the property of their respective owners. This website is not affiliated with or endorsed by any of the mentioned software companies. Logos are used for informational purposes only.</i></footer>
+      <footer className="text-sm text-muted-foreground whitespace-pre-line text-center"><i>All trademarks, logos and product images are the property of their respective owners. This website is not affiliated with or endorsed by any of the mentioned software companies. All are used for informational purposes only.</i></footer>
       </div>
   );
 };
