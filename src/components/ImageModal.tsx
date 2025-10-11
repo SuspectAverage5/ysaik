@@ -102,7 +102,7 @@ export const ImageModal = ({ image, onClose }: ImageModalProps) => {
             <img
               src={image.src}
               alt={image.title}
-              className="max-w-full max-h-full object-contain"
+              className="max-w-full max-h-full object-contain rounded-xl"
             />
           </div>
         </DialogContent>
