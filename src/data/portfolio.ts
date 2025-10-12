@@ -187,6 +187,25 @@ export const images: ImageData[] = [
       "Seeing": "Good (5/5)",
       "Transparency": "Good (5/5)"
     }
+  },
+  {
+    id: "5",
+    src: "src/assets/ngc_6543.jpg",
+    title: "Cat's Eye Nebula (NGC 6543)",
+    tags: {
+      focalLength: "2000mm",
+      targetType: "Nebula",
+      equipment: "SCT + Cooled Astrocam",
+      location: "Backyard"
+    },
+    exif: {
+      "Exposure": "1h (30x120s)",
+      "Date": "9-28-2025",
+      "Filters": "Optolong L-eXtreme",
+      "Sky Darkness": "19 mag/arcsec²",
+      "Seeing": "Fair (3/5)",
+      "Transparency": "Fair (3/5)"
+    }
   }
   // Add more images here
 ];
