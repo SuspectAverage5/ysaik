@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Dialog, DialogContent } from "./ui/dialog";
 import { X } from "lucide-react";
 import { ImageData } from "@/data/portfolio";
@@ -19,6 +19,10 @@ export const ImageModal = ({ image, onClose }: ImageModalProps) => {
       return Math.max(1, Math.min(3, newZoom));
     });
   };
+
+  useEffect(() => {
+    setZoomLevel(1.5);
+  }, [image]);
   
   if (!image) return null;
 
