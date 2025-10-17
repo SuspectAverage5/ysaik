@@ -55,7 +55,7 @@ export const Gallery = () => {
           {category === "focalLength" ? "Focal Length" : category === "targetType" ? "Target Type" : category === "equipment" ? "Equipment" : "Location"}
         </h3>
         <div className="flex flex-wrap gap-2 px-0 my-0 py-0 mx-0 bg-inherit">
-          {tags.map(tag => <Button key={tag} variant={isTagSelected(category, tag) ? "default" : "outline"} size="sm" onClick={() => handleFilterChange(category, tag)} className="text-sm">
+          {tags.map(tag => <Button key={tag} variant={isTagSelected(category, tag) ? "default" : "outline"} size="sm" onClick={() => handleFilterChange(category, tag)} className="text-sm transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
               {tag}
             </Button>)}
         </div>
@@ -79,7 +79,7 @@ export const Gallery = () => {
       {/* Filters */}
       <div className="max-w-4xl mx-auto mb-12 space-y-4">
         <div className="flex justify-center mb-6">
-          <Button variant={selectedTags.length === 0 ? "default" : "outline"} onClick={() => handleFilterChange("all", null)} className="rounded-xl font-normal text-base text-center text-slate-50">
+          <Button variant={selectedTags.length === 0 ? "default" : "outline"} onClick={() => handleFilterChange("all", null)} className="rounded-xl font-normal text-base text-center text-slate-50 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
             {selectedTags.length === 0 ? "View All Images" : "Reset tags"}
           </Button>
         </div>
