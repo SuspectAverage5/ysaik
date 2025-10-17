@@ -86,7 +86,8 @@ All colors MUST be HSL.
     background-image: radial-gradient(circle at 20% 50%, hsl(var(--nebula-start)) 0%, transparent 50%),
                       radial-gradient(circle at 80% 80%, hsl(var(--nebula-end)) 0%, transparent 50%);
     background-attachment: fixed;
-    font-family: monospace
+    font-family: monospace;
+    /* image-rendering: -webkit-optimize-contrast; */
   }
 }
 
@@ -110,4 +111,3 @@ All colors MUST be HSL.
 ::-webkit-scrollbar {
     display: none;
 }
-

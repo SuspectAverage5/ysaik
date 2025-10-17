@@ -146,18 +146,18 @@ export const images: ImageData[] = [
       "Date": "2024-03-15",
       "Filters": "None",
       "Sky Darkness": "19 mag/arcsec²",
-      "Seeing": "Good (5/5)",
-      "Transparency": "Good (4/5)"
+      "Seeing": "Great (5/5)",
+      "Transparency": "Great (4/5)"
     }
   },
   {
     id: "3",
-    src: "src/assets/NZ7_3796 web.jpg",
+    src: "src/assets/NZ7_3796.jpg",
     title: "Arz Milky Way",
     tags: {
       focalLength: "16mm",
       targetType: "Galaxy",
-      equipment: "Mirrorless Camera + Wide Angle Lens",
+      equipment: "Mirrorless Camera + Lens",
       location: "Arz, Lebanon"
     },
     exif: {
@@ -165,8 +165,8 @@ export const images: ImageData[] = [
       "Date": "8-24-2025",
       "Filters": "None",
       "Sky Darkness": "21.5 mag/arcsec²",
-      "Seeing": "Good (5/5)",
-      "Transparency": "Good (5/5)"
+      "Seeing": "Great (5/5)",
+      "Transparency": "Great (5/5)"
     }
   },
   {
@@ -184,8 +184,8 @@ export const images: ImageData[] = [
       "Date": "8-24-2025",
       "Filters": "None",
       "Sky Darkness": "21.5 mag/arcsec²",
-      "Seeing": "Good (5/5)",
-      "Transparency": "Good (5/5)"
+      "Seeing": "Great (5/5)",
+      "Transparency": "Great (5/5)"
     }
   },
   {
@@ -204,6 +204,83 @@ export const images: ImageData[] = [
       "Filters": "Optolong L-eXtreme",
       "Sky Darkness": "19 mag/arcsec²",
       "Seeing": "Fair (3/5)",
+      "Transparency": "Fair (3/5)"
+    }
+  },
+  {
+    id: "6",
+    src: "src/assets/bekaastartrail.jpg",
+    title: "Bekaa Star Trail",
+    tags: {
+      focalLength: "80mm",
+      targetType: "Star Trail",
+      equipment: "Mirrorless Camera + Lens",
+      location: "Arz, Lebanon"
+    },
+    exif: {
+      "Exposure": "10m (5x120s)",
+      "Date": "8-24-2025",
+      "Filters": "None",
+      "Sky Darkness": "21.5 mag/arcsec²",
+      "Seeing": "Great (5/5)",
+      "Transparency": "Great (5/5)"
+    }
+  },
+  {
+    id: "7",
+    src: "src/assets/lunareclipseFinal.jpg",
+    title: "Lunar Eclipse 2025",
+    tags: {
+      focalLength: "600mm",
+      targetType: "Moon",
+      equipment: "Mirrorless Camera + Lens",
+      location: "Sannine, Lebanon"
+    },
+    exif: {
+      "Exposure": "0.25s",
+      "Date": "9-7-2025",
+      "Filters": "None",
+      "Sky Darkness": "21 mag/arcsec²",
+      "Seeing": "Good (4/5)",
+      "Transparency": "Fair (3/5)"
+    }
+  },
+  {
+    id: "8",
+    src: "src/assets/NZ7_4879.jpg",
+    title: "Lunar Eclipse 2025",
+    tags: {
+      focalLength: "600mm",
+      targetType: "Moon",
+      equipment: "Mirrorless Camera + Lens",
+      location: "Sannine, Lebanon"
+    },
+    exif: {
+      "Exposure": "0.25s",
+      "Date": "9-7-2025",
+      "Filters": "None",
+      "Sky Darkness": "21 mag/arcsec²",
+      "Seeing": "Good (4/5)",
+      "Transparency": "Fair (3/5)"
+    }
+  }
+  ,
+  {
+    id: "9",
+    src: "src/assets/NZ7_4900.jpg",
+    title: "Lunar Eclipse 2025",
+    tags: {
+      focalLength: "600mm",
+      targetType: "Moon",
+      equipment: "Mirrorless Camera + Lens",
+      location: "Sannine, Lebanon"
+    },
+    exif: {
+      "Exposure": "0.25s",
+      "Date": "9-7-2025",
+      "Filters": "None",
+      "Sky Darkness": "21 mag/arcsec²",
+      "Seeing": "Good (4/5)",
       "Transparency": "Fair (3/5)"
     }
   }
