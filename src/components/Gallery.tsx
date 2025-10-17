@@ -8,12 +8,14 @@ import watermark from "@/assets/watermark.png";
 type FilterType = "all" | "focalLength" | "targetType" | "equipment" | "location";
 export const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<typeof images[0] | null>(null);
-  const [activeFilter, setActiveFilter] = useState<FilterType>("all");
-  const [activeTag, setActiveTag] = useState<string | null>(null);
+  const [selectedTags, setSelectedTags] = useState<{filterType: FilterType, tag: string}[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
+  
   const filteredImages = images.filter(img => {
-    // Filter by active tag
-    const matchesFilter = activeFilter === "all" || !activeTag || img.tags[activeFilter] === activeTag;
+    // Filter by selected tags (AND logic - image must have ALL selected tags)
+    const matchesFilter = selectedTags.length === 0 || selectedTags.every(
+      ({filterType, tag}) => img.tags[filterType] === tag
+    );
 
     // Filter by search query
     if (!searchQuery.trim()) return matchesFilter;
@@ -23,9 +25,25 @@ export const Gallery = () => {
     });
     return matchesFilter && matchesSearch;
   });
+  
   const handleFilterChange = (filterType: FilterType, tag: string | null) => {
-    setActiveFilter(filterType);
-    setActiveTag(tag);
+    if (filterType === "all") {
+      setSelectedTags([]);
+      return;
+    }
+    
+    if (!tag) return;
+    
+    const tagExists = selectedTags.some(t => t.filterType === filterType && t.tag === tag);
+    if (tagExists) {
+      setSelectedTags(selectedTags.filter(t => !(t.filterType === filterType && t.tag === tag)));
+    } else {
+      setSelectedTags([...selectedTags, {filterType, tag}]);
+    }
+  };
+  
+  const isTagSelected = (filterType: FilterType, tag: string) => {
+    return selectedTags.some(t => t.filterType === filterType && t.tag === tag);
   };
   const renderFilterButtons = (category: FilterType, tags: string[]) => {
     if (!tags.length) return null;
@@ -34,7 +52,7 @@ export const Gallery = () => {
           {category === "focalLength" ? "Focal Length" : category === "targetType" ? "Target Type" : category === "equipment" ? "Equipment" : "Location"}
         </h3>
         <div className="flex flex-wrap gap-2 px-0 my-0 py-0 mx-0 bg-inherit">
-          {tags.map(tag => <Button key={tag} variant={activeFilter === category && activeTag === tag ? "default" : "outline"} size="sm" onClick={() => handleFilterChange(category, tag)} className="text-sm">
+          {tags.map(tag => <Button key={tag} variant={isTagSelected(category, tag) ? "default" : "outline"} size="sm" onClick={() => handleFilterChange(category, tag)} className="text-sm">
               {tag}
             </Button>)}
         </div>
@@ -58,8 +76,8 @@ export const Gallery = () => {
       {/* Filters */}
       <div className="max-w-4xl mx-auto mb-12 space-y-4">
         <div className="flex justify-center mb-6">
-          <Button variant={activeFilter === "all" ? "default" : "outline"} onClick={() => handleFilterChange("all", null)} className="rounded-xl font-normal text-base text-center text-slate-50">
-            {activeFilter === "all" && !activeTag ? "View All Images" : "Reset tags"}
+          <Button variant={selectedTags.length === 0 ? "default" : "outline"} onClick={() => handleFilterChange("all", null)} className="rounded-xl font-normal text-base text-center text-slate-50">
+            {selectedTags.length === 0 ? "View All Images" : "Reset tags"}
           </Button>
         </div>
         
