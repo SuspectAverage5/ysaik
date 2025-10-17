@@ -36,9 +36,12 @@ export const Gallery = () => {
     
     const tagExists = selectedTags.some(t => t.filterType === filterType && t.tag === tag);
     if (tagExists) {
+      // Deselect if clicking the same tag
       setSelectedTags(selectedTags.filter(t => !(t.filterType === filterType && t.tag === tag)));
     } else {
-      setSelectedTags([...selectedTags, {filterType, tag}]);
+      // Remove any existing tag from this category, then add the new one
+      const otherTags = selectedTags.filter(t => t.filterType !== filterType);
+      setSelectedTags([...otherTags, {filterType, tag}]);
     }
   };
   
