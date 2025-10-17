@@ -59,7 +59,7 @@ export const Gallery = () => {
       <div className="max-w-4xl mx-auto mb-12 space-y-4">
         <div className="flex justify-center mb-6">
           <Button variant={activeFilter === "all" ? "default" : "outline"} onClick={() => handleFilterChange("all", null)} className="rounded-xl font-normal text-base text-center text-slate-50">
-            View All Images
+            {activeFilter === "all" && !activeTag ? "View All Images" : "Reset tags"}
           </Button>
         </div>
         
