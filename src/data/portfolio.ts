@@ -110,6 +110,34 @@ export const software: EquipmentItem[] = [
   }
 ];
 
+// MODIFY THIS: Astronomy and stargazing apps
+export const astronomyApps: EquipmentItem[] = [
+  {
+    id: "1",
+    name: "Stellarium",
+    image: "src/assets/stellarium.webp",
+    description: "Open-source planetarium software for real-time sky simulation"
+  },
+  {
+    id: "2",
+    name: "SkySafari",
+    image: "src/assets/skysafari.png",
+    description: "Mobile planetarium with telescope control features"
+  },
+  {
+    id: "3",
+    name: "PhotoPills",
+    image: "src/assets/photopills.png",
+    description: "Sun, moon, and Milky Way planner for photographers"
+  },
+  {
+    id: "4",
+    name: "Star Walk 2",
+    image: "src/assets/starwalk.png",
+    description: "AR stargazing app with beautiful visual interface"
+  }
+];
+
 // MODIFY THIS: Your astrophotography images
 export const images: ImageData[] = [
   {
