@@ -94,6 +94,7 @@ export const Gallery = () => {
       {filteredImages.length === 0 && (selectedTags.length > 0 || searchQuery.trim()) ? (
         <div className="text-center py-20">
           <p className="text-2xl text-muted-foreground">:( no images with all set tags</p>
+          <p className="text-2xl text-muted-foreground">use the "Reset tags" button</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">

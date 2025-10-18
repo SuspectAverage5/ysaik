@@ -62,6 +62,11 @@ const Equipment = () => {
             ))}
           </div>
         </section>
+        <section className="container mx-auto px-4 py-20">
+          <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+            Stargazing / Astronomy Apps
+          </h1>
+        </section>
       </div>
       <footer className="text-sm text-muted-foreground whitespace-pre-line text-center"><i>All trademarks, logos and product images are the property of their respective owners. This website is not affiliated with or endorsed by any of the mentioned software companies. All are used for informational purposes only.</i></footer>
       </div>
