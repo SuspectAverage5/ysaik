@@ -3,7 +3,7 @@ import { images, filterCategories } from "@/data/portfolio";
 import { ImageModal } from "./ImageModal";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-import { Search } from "lucide-react";
+import { Search, ArrowUp } from "lucide-react";
 import watermark from "@/assets/watermark.png";
 type FilterType = "all" | "focalLength" | "targetType" | "equipment" | "location";
 export const Gallery = () => {
@@ -125,6 +125,19 @@ export const Gallery = () => {
         </h3>
         <div className="flex justify-center">
           <iframe className="w-[95%] h-[80vh] rounded-xl" src="https://momento360.com/e/u/0ae456b2283d438886f59a54d3267053?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true" allowFullScreen allow="fullscreen"></iframe>
+        </div>
+
+        {/* Scroll to Top Button */}
+        <div className="flex justify-center mt-12 mb-8">
+          <Button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            variant="outline"
+            size="lg"
+            className="rounded-full transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+          >
+            <ArrowUp className="mr-2 h-5 w-5" />
+            Back to Top
+          </Button>
         </div>
       </div>
     </section>;
