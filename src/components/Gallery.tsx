@@ -77,17 +77,19 @@ export const Gallery = () => {
       </div>
 
       {/* Filters */}
-      <div className="max-w-4xl mx-auto mb-12 space-y-4">
+      <div className="max-w-4xl mx-auto mb-12">
         <div className="flex justify-center mb-6">
           <Button variant={selectedTags.length === 0 ? "default" : "outline"} onClick={() => handleFilterChange("all", null)} className="rounded-xl font-normal text-base text-center text-slate-50 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
             {selectedTags.length === 0 ? "View All Images" : "Reset tags"}
           </Button>
         </div>
         
-        {renderFilterButtons("focalLength", filterCategories.focalLength)}
-        {renderFilterButtons("targetType", filterCategories.targetType)}
-        {renderFilterButtons("equipment", filterCategories.equipment)}
-        {renderFilterButtons("location", filterCategories.location)}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {renderFilterButtons("focalLength", filterCategories.focalLength)}
+          {renderFilterButtons("targetType", filterCategories.targetType)}
+          {renderFilterButtons("equipment", filterCategories.equipment)}
+          {renderFilterButtons("location", filterCategories.location)}
+        </div>
       </div>
 
       {/* Image Grid */}
