@@ -135,7 +135,7 @@ export const astronomyApps: EquipmentItem[] = [
   {
     id: "2",
     name: "SkySafari",
-    image: "src/assets/skysafari.png",
+    image: "src/assets/skysafari.webp",
     description: "Mobile planetarium with telescope control features",
     detailedInfo: "A comprehensive mobile app that not only simulates the night sky but can also wirelessly control telescopes, making it easy to locate and track objects."
   },
