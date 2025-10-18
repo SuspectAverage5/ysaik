@@ -91,22 +91,28 @@ export const Gallery = () => {
       </div>
 
       {/* Image Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-        {filteredImages.map((image, index) => <div key={image.id} className="group cursor-pointer animate-fade-in" onClick={() => setSelectedImage(image)}>
-            <div className="cosmic-border rounded-lg overflow-hidden aspect-square hover:stellar-glow transition-all duration-300 relative">
-              <img src={image.src} alt={image.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-              {/* <img src={watermark} alt="Watermark" className="absolute bottom-2 right-2 md:w-30% md:h-30% opacity-25 pointer-events-none" width="30%" height="30%" /> */}
-            </div>
-            <h3 className="font-semibold mt-3 text-foreground group-hover:text-primary transition-colors text-xl text-left">
-              {image.title}
-            </h3>
-            <div className="flex flex-wrap gap-2 mt-2">
-              {Object.values(image.tags).filter(Boolean).slice(0, 2).map((tag, i) => <span key={i} className="px-2 py-1 rounded-full bg-secondary text-secondary-foreground text-sm">
-                  {tag}
-                </span>)}
-            </div>
-          </div>)}
-      </div>
+      {filteredImages.length === 0 && (selectedTags.length > 0 || searchQuery.trim()) ? (
+        <div className="text-center py-20">
+          <p className="text-2xl text-muted-foreground">:( no images with all set tags</p>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          {filteredImages.map((image, index) => <div key={image.id} className="group cursor-pointer animate-fade-in" onClick={() => setSelectedImage(image)}>
+              <div className="cosmic-border rounded-lg overflow-hidden aspect-square hover:stellar-glow transition-all duration-300 relative">
+                <img src={image.src} alt={image.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                {/* <img src={watermark} alt="Watermark" className="absolute bottom-2 right-2 md:w-30% md:h-30% opacity-25 pointer-events-none" width="30%" height="30%" /> */}
+              </div>
+              <h3 className="font-semibold mt-3 text-foreground group-hover:text-primary transition-colors text-xl text-left">
+                {image.title}
+              </h3>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {Object.values(image.tags).filter(Boolean).slice(0, 2).map((tag, i) => <span key={i} className="px-2 py-1 rounded-full bg-secondary text-secondary-foreground text-sm">
+                    {tag}
+                  </span>)}
+              </div>
+            </div>)}
+        </div>
+      )}
 
       {/* Image Modal */}
       <ImageModal image={selectedImage} onClose={() => setSelectedImage(null)} />
