@@ -263,8 +263,7 @@ export const images: ImageData[] = [
       "Seeing": "Good (4/5)",
       "Transparency": "Fair (3/5)"
     }
-  }
-  ,
+  },
   {
     id: "9",
     src: "src/assets/NZ7_4900.jpg",
@@ -282,6 +281,25 @@ export const images: ImageData[] = [
       "Sky Darkness": "21 mag/arcsec²",
       "Seeing": "Good (4/5)",
       "Transparency": "Fair (3/5)"
+    }
+  },
+  {
+    id: "10",
+    src: "src/assets/NZ7_3802.jpg",
+    title: "Arz Milky Way",
+    tags: {
+      focalLength: "16mm",
+      targetType: "Galaxy",
+      equipment: "Mirrorless Camera + Lens",
+      location: "Arz, Lebanon"
+    },
+    exif: {
+      "Exposure": "120s",
+      "Date": "8-24-2025",
+      "Filters": "None",
+      "Sky Darkness": "21.5 mag/arcsec²",
+      "Seeing": "Great (5/5)",
+      "Transparency": "Great (5/5)"
     }
   }
   // Add more images here

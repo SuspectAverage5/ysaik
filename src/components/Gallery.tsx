@@ -55,7 +55,7 @@ export const Gallery = () => {
           {category === "focalLength" ? "Focal Length" : category === "targetType" ? "Target Type" : category === "equipment" ? "Equipment" : "Location"}
         </h3>
         <div className="flex flex-wrap gap-2 px-0 my-0 py-0 mx-0 bg-inherit">
-          {tags.map(tag => <Button key={tag} variant={isTagSelected(category, tag) ? "default" : "outline"} size="sm" onClick={() => handleFilterChange(category, tag)} className="text-sm transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+          {tags.map(tag => <Button key={tag} variant={isTagSelected(category, tag) ? "default" : "outline"} size="sm" onClick={() => handleFilterChange(category, tag)} className="text-sm transition-all duration-300 ease-in-out hover:shadow-lg">
               {tag}
             </Button>)}
         </div>

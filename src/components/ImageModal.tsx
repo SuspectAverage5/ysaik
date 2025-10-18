@@ -98,7 +98,7 @@ export const ImageModal = ({ image, onClose }: ImageModalProps) => {
                 Notes
               </h3>
               <p className="text-sm text-foreground/70 italic">
-                You can zoom in.
+                You can zoom in with the scroll wheel.
                 If you want to support me, consider following me on Instagram at <a className="hover:bg-background text-blue-300 rounded-lg transition: duration-300" href="https://www.instagram.com/yasaik_">yasaik_</a>.
                 Please do not steal.
               </p>
