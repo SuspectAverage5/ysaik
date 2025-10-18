@@ -1,7 +1,12 @@
 import { equipment, software, astronomyApps } from "@/data/portfolio";
 import { Header } from "@/components/Header";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { useState } from "react";
+import type { EquipmentItem } from "@/data/portfolio";
 
 const Equipment = () => {
+  const [selectedItem, setSelectedItem] = useState<EquipmentItem | null>(null);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted animate-fade-in">
       <Header />
@@ -14,7 +19,8 @@ const Equipment = () => {
             {equipment.map((item) => (
               <div
                 key={item.id}
-                className="cosmic-border p-6 hover:stellar-glow transition-all duration-300 bg-blue-800 rounded-2xl"
+                onClick={() => setSelectedItem(item)}
+                className="cosmic-border p-6 hover:stellar-glow transition-all duration-300 bg-blue-800 rounded-2xl cursor-pointer"
               >
                 <div className="aspect-square rounded-lg overflow-hidden mb-4 bg-white">
                   <img
@@ -43,7 +49,8 @@ const Equipment = () => {
             {software.map((item) => (
               <div
                 key={item.id}
-                className="cosmic-border p-6 hover:stellar-glow transition-all duration-300 bg-blue-800 rounded-2xl"
+                onClick={() => setSelectedItem(item)}
+                className="cosmic-border p-6 hover:stellar-glow transition-all duration-300 bg-blue-800 rounded-2xl cursor-pointer"
               >
                 <div className="aspect-square rounded-lg overflow-hidden mb-4 ">
                   <img
@@ -70,7 +77,8 @@ const Equipment = () => {
             {astronomyApps.map((item) => (
               <div
                 key={item.id}
-                className="cosmic-border p-6 hover:stellar-glow transition-all duration-300 bg-blue-800 rounded-2xl"
+                onClick={() => setSelectedItem(item)}
+                className="cosmic-border p-6 hover:stellar-glow transition-all duration-300 bg-blue-800 rounded-2xl cursor-pointer"
               >
                 <div className="aspect-square rounded-lg overflow-hidden mb-4 bg-white">
                   <img
@@ -91,6 +99,17 @@ const Equipment = () => {
         </section>
       </div>
       <footer className="text-sm text-muted-foreground whitespace-pre-line text-center"><i>All trademarks, logos and product images are the property of their respective owners. This website is not affiliated with or endorsed by any of the mentioned software companies. All are used for informational purposes only.</i></footer>
+      
+      <Dialog open={!!selectedItem} onOpenChange={() => setSelectedItem(null)}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle>{selectedItem?.name}</DialogTitle>
+            <DialogDescription className="pt-4">
+              {selectedItem?.detailedInfo || selectedItem?.description}
+            </DialogDescription>
+          </DialogHeader>
+        </DialogContent>
+      </Dialog>
       </div>
   );
 };
