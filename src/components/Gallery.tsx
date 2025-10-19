@@ -79,8 +79,8 @@ export const Gallery = () => {
       {/* Filters */}
       <div className="max-w-4xl mx-auto mb-12">
         <div className="flex justify-center mb-6">
-          <Button variant={selectedTags.length === 0 ? "default" : "outline"} onClick={() => handleFilterChange("all", null)} className="rounded-xl font-normal text-base text-center text-slate-50 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
-            {selectedTags.length === 0 ? "View All Images" : "Reset tags"}
+          <Button variant={selectedTags.length === 0 ? "default" : "outline"} onClick={() => handleFilterChange("all", null)} className="rounded-xl font-normal text-base text-center text-slate-50 transition-all duration-300 ease-in-out hover:shadow-lg">
+            {selectedTags.length === 0 ? "All Images" : "Reset tags"}
           </Button>
         </div>
         
@@ -128,6 +128,9 @@ export const Gallery = () => {
         </h3>
         <div className="flex justify-center">
           <iframe className="w-[95%] h-[80vh] rounded-xl" src="https://momento360.com/e/u/0ae456b2283d438886f59a54d3267053?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true" allowFullScreen allow="fullscreen"></iframe>
+        </div>
+        <div className="flex justify-center">
+          <img src="./src/assets/8-23-25 little planet.png"></img>
         </div>
 
         {/* Scroll to Top Button */}

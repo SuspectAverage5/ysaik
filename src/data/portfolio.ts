@@ -28,7 +28,7 @@ export interface EquipmentItem {
 export const aboutMe = {
   name: "Yasaik_",
   title: "Amateur Astrophotography",
-  description: "See the cosmos through my eyes, one picture at a time. Discover deep-sky imaging and night sky photography while shedding light on the beauty of the universe.",
+  description: "See the cosmos through my eyes, one picture at a time. Discover the art of deep-sky imaging and night sky photography, revealing the beauty of the universe.",
 };
 
 // MODIFY THIS: Your equipment showcase
@@ -236,7 +236,7 @@ export const images: ImageData[] = [
   {
     id: "5",
     src: "src/assets/ngc_6543.jpg",
-    title: "Cat's Eye Nebula (NGC 6543)",
+    title: "Cat's Eye Planetary Nebula (NGC 6543)",
     tags: {
       focalLength: "2000mm",
       targetType: "Nebula",
@@ -345,6 +345,82 @@ export const images: ImageData[] = [
       "Sky Darkness": "21.5 mag/arcsec²",
       "Seeing": "Great (5/5)",
       "Transparency": "Great (5/5)"
+    }
+  },
+  {
+    id: "11",
+    src: "src/assets/ngc_6826.jpg",
+    title: "Blinking Planetary Nebula (NGC 6826)",
+    tags: {
+      focalLength: "2000mm",
+      targetType: "Nebula",
+      equipment: "SCT + Cooled Astrocam",
+      location: "Backyard"
+    },
+    exif: {
+      "Exposure": "1h (30x120s)",
+      "Date": "10-10-2025",
+      "Filters": "Optolong L-eXtreme",
+      "Sky Darkness": "19 mag/arcsec²",
+      "Seeing": "Fair (3/5)",
+      "Transparency": "Fair (3/5)"
+    }
+  },
+  {
+    id: "12",
+    src: "src/assets/m57.jpg",
+    title: "Ring Planetary Nebula (M 57)",
+    tags: {
+      focalLength: "2000mm",
+      targetType: "Nebula",
+      equipment: "SCT + Cooled Astrocam",
+      location: "Backyard"
+    },
+    exif: {
+      "Exposure": "1h (30x120s)",
+      "Date": "10-10-2025",
+      "Filters": "Optolong L-eXtreme",
+      "Sky Darkness": "19 mag/arcsec²",
+      "Seeing": "Fair (3/5)",
+      "Transparency": "Fair (3/5)"
+    }
+  },
+  {
+    id: "13",
+    src: "src/assets/ngc_6888.jpg",
+    title: "Crescent Nebula (NGC 6888)",
+    tags: {
+      focalLength: "2000mm",
+      targetType: "Nebula",
+      equipment: "SCT + Cooled Astrocam",
+      location: "Backyard"
+    },
+    exif: {
+      "Exposure": "1h20 (40x120s)",
+      "Date": "8-7-2025",
+      "Filters": "Optolong L-eXtreme",
+      "Sky Darkness": "19 mag/arcsec²",
+      "Seeing": "Good (4/5)",
+      "Transparency": "Good (4/5)"
+    }
+  },
+  {
+    id: "14",
+    src: "src/assets/C30.jpg",
+    title: "Deer Lick Group (C 30)",
+    tags: {
+      focalLength: "2000mm",
+      targetType: "Galaxy",
+      equipment: "SCT + Cooled Astrocam",
+      location: "Arz, Lebanon"
+    },
+    exif: {
+      "Exposure": "2h20 (70x120s)",
+      "Date": "7-22-2025",
+      "Filters": "None",
+      "Sky Darkness": "21.5 mag/arcsec²",
+      "Seeing": "Great (5/5)",
+      "Transparency": "Good (4/5)"
     }
   }
   // Add more images here

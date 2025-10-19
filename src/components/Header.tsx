@@ -15,7 +15,7 @@ export const Header = () => {
         <Link to="/biography">
           <Button variant="ghost">Biography</Button>
         </Link>
-        <a href="https://www.instagram.com/yasaik_" className="ml-auto">
+        <a href="https://www.instagram.com/yasaik_" className="ml-auto" id="watermark-header">
           <img src="src/assets/watermark.png" width="50%" height="50%" className="md:w-50% md:h-50%" alt="Instagram" />
         </a>
       </nav>
