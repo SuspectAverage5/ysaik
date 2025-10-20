@@ -36,56 +36,56 @@ export const equipment: EquipmentItem[] = [
   {
     id: "1",
     name: "Telescope",
-    image: "src/assets/edgehd8.jpg",
+    image: "/assets/edgehd8.jpg",
     description: 'Celestron EdgeHD 8"',
     detailedInfo: "The primary optical instrument that gathers light from celestial objects. This Schmidt-Cassegrain telescope provides 2000mm focal length for detailed deep-sky imaging."
   },
   {
     id: "2",
     name: "Mount",
-    image: "src/assets/eq6rpro.jpg",
+    image: "/assets/eq6rpro.jpg",
     description: "SkyWatcher EQ6-R Pro",
     detailedInfo: "The equatorial mount that tracks celestial objects as Earth rotates. Essential for long-exposure astrophotography, it precisely follows stars across the sky."
   },
   {
     id: "3",
     name: "Astro Camera",
-    image: "src/assets/2600mcp.png",
+    image: "/assets/2600mcp.png",
     description: "ZWO ASI2600MC Pro",
     detailedInfo: "A cooled, dedicated astronomy camera with high sensitivity for capturing faint deep-sky objects. The cooling reduces thermal noise for cleaner images during long exposures."
   },
   {
     id: "4",
     name: "Guiding System",
-    image: "src/assets/guiding.jpg",
+    image: "/assets/guiding.jpg",
     description: "Celestron OAG & ZWO ASI 120mm Mini",
     detailedInfo: "An off-axis guider with a separate camera that monitors tracking accuracy in real-time, making tiny corrections to keep the target perfectly centered during long exposures."
   },
   {
     id: "5",
     name: "Light Pollution Filter",
-    image: "src/assets/lextreme.webp",
+    image: "/assets/lextreme.webp",
     description: "Optolong L-eXtreme (Dual-Band filter)",
     detailedInfo: "A specialized filter that blocks light pollution while allowing specific wavelengths of nebula emission (H-alpha and OIII) to pass through, dramatically improving contrast from urban locations."
   },
   {
     id: "6",
     name: "ZWO Asiair Plus",
-    image: "src/assets/asiair.jpg",
+    image: "/assets/asiair.jpg",
     description: "Wireless Mini PC that controls everything",
     detailedInfo: "The control hub that wirelessly manages the entire imaging setup - controlling the camera, mount, guiding, and focusing - all from a smartphone or tablet."
   },
   {
     id: "7",
     name: "Camera",
-    image: "src/assets/z7ii.webp",
+    image: "/assets/z7ii.webp",
     description: "Nikon Z7II",
     detailedInfo: "A full-frame mirrorless camera used for wide-field astrophotography, capturing stunning Milky Way landscapes and star trails with exceptional image quality."
   },
   {
     id: "8",
     name: "Star Tracker",
-    image: "src/assets/sw2i.webp",
+    image: "/assets/sw2i.webp",
     description: "SkyWatcher Adventurer 2i Pro",
     detailedInfo: "A portable tracking mount for the camera that compensates for Earth's rotation, allowing longer exposures of the night sky without star trails when shooting wide-field images."
   }
@@ -96,28 +96,28 @@ export const software: EquipmentItem[] = [
   {
     id: "1",
     name: "DeepSkyStacker",
-    image: "src/assets/dss.webp",
+    image: "/assets/dss.webp",
     description: "Image stacking",
     detailedInfo: "Stacks multiple exposures into a single image, averaging out noise and revealing faint details that would be invisible in a single frame."
   },
   {
     id: "2",
     name: "PixInsight",
-    image: "src/assets/pix.png",
+    image: "/assets/pix.png",
     description: "Advanced image processing",
     detailedInfo: "Professional-grade software for calibrating, stretching, and processing astrophotography data with powerful tools for noise reduction, star alignment, and color correction."
   },
   {
     id: "3",
     name: "Adobe Photoshop",
-    image: "src/assets/ps.png",
+    image: "/assets/ps.png",
     description: "Final touches and adjustments",
     detailedInfo: "Used for final artistic adjustments, adding contrast, enhancing colors, and creating the polished final image for presentation."
   },
   {
     id: "4",
     name: "Siril",
-    image: "src/assets/siril.png",
+    image: "/assets/siril.png",
     description: "Free Alternative to PixInsight",
     detailedInfo: "Open-source image processing software offering many of the same capabilities as PixInsight, making advanced processing techniques accessible to all astrophotographers."
   }
@@ -128,28 +128,28 @@ export const astronomyApps: EquipmentItem[] = [
   {
     id: "1",
     name: "Stellarium",
-    image: "src/assets/stellarium.webp",
+    image: "/assets/stellarium.webp",
     description: "Open-source planetarium software for real-time sky simulation",
     detailedInfo: "A powerful desktop planetarium that shows exactly what you'll see in the night sky at any time and location, helping plan observations and identify celestial objects."
   },
   {
     id: "2",
     name: "SkySafari",
-    image: "src/assets/skysafari.webp",
+    image: "/assets/skysafari.webp",
     description: "Mobile planetarium with telescope control features",
     detailedInfo: "A comprehensive mobile app that not only simulates the night sky but can also wirelessly control telescopes, making it easy to locate and track objects."
   },
   {
     id: "3",
     name: "PhotoPills",
-    image: "src/assets/photopills.png",
+    image: "/assets/photopills.png",
     description: "Sun, moon, and Milky Way planner for photographers",
     detailedInfo: "Essential tool for planning astrophotography sessions, predicting when and where the Milky Way will appear, and calculating optimal shooting times for celestial events."
   },
   {
     id: "4",
     name: "Star Walk 2",
-    image: "src/assets/starwalk.png",
+    image: "/assets/starwalk.png",
     description: "AR stargazing app with beautiful visual interface",
     detailedInfo: "An augmented reality app that overlays constellation names and information directly on your phone's camera view, making stargazing interactive and educational."
   }
@@ -159,7 +159,7 @@ export const astronomyApps: EquipmentItem[] = [
 export const images: ImageData[] = [
   {
     id: "1",
-    src: "src/assets/M42.jpg", // Replace with your image
+    src: "/assets/M42.jpg", // Replace with your image
     title: "Orion Nebula",
     tags: {
       focalLength: "2000mm",
@@ -178,7 +178,7 @@ export const images: ImageData[] = [
   },
   {
     id: "2",
-    src: "src/assets/m51.jpg", // Replace with your image
+    src: "/assets/m51.jpg", // Replace with your image
     title: "Whirlpool Galaxy (M51)",
     tags: {
       focalLength: "2000mm",
@@ -197,7 +197,7 @@ export const images: ImageData[] = [
   },
   {
     id: "3",
-    src: "src/assets/NZ7_3796.jpg",
+    src: "/assets/NZ7_3796.jpg",
     title: "Arz Milky Way",
     tags: {
       focalLength: "16mm",
@@ -216,7 +216,7 @@ export const images: ImageData[] = [
   },
   {
     id: "4",
-    src: "src/assets/ngc_6946.jpg",
+    src: "/assets/ngc_6946.jpg",
     title: "Fireworks Galaxy (NGC 6946)",
     tags: {
       focalLength: "2000mm",
@@ -235,7 +235,7 @@ export const images: ImageData[] = [
   },
   {
     id: "5",
-    src: "src/assets/ngc_6543.jpg",
+    src: "/assets/ngc_6543.jpg",
     title: "Cat's Eye Planetary Nebula (NGC 6543)",
     tags: {
       focalLength: "2000mm",
@@ -254,7 +254,7 @@ export const images: ImageData[] = [
   },
   {
     id: "6",
-    src: "src/assets/bekaastartrail.jpg",
+    src: "/assets/bekaastartrail.jpg",
     title: "Bekaa Star Trail",
     tags: {
       focalLength: "80mm",
@@ -273,7 +273,7 @@ export const images: ImageData[] = [
   },
   {
     id: "7",
-    src: "src/assets/lunareclipseFinal.jpg",
+    src: "/assets/lunareclipseFinal.jpg",
     title: "Lunar Eclipse 2025",
     tags: {
       focalLength: "600mm",
@@ -292,7 +292,7 @@ export const images: ImageData[] = [
   },
   {
     id: "8",
-    src: "src/assets/NZ7_4879.jpg",
+    src: "/assets/NZ7_4879.jpg",
     title: "Lunar Eclipse 2025",
     tags: {
       focalLength: "600mm",
@@ -311,7 +311,7 @@ export const images: ImageData[] = [
   },
   {
     id: "9",
-    src: "src/assets/NZ7_4900.jpg",
+    src: "/assets/NZ7_4900.jpg",
     title: "Lunar Eclipse 2025",
     tags: {
       focalLength: "600mm",
@@ -330,7 +330,7 @@ export const images: ImageData[] = [
   },
   {
     id: "10",
-    src: "src/assets/NZ7_3802.jpg",
+    src: "/assets/NZ7_3802.jpg",
     title: "Arz Milky Way",
     tags: {
       focalLength: "16mm",
@@ -349,7 +349,7 @@ export const images: ImageData[] = [
   },
   {
     id: "11",
-    src: "src/assets/ngc_6826.jpg",
+    src: "/assets/ngc_6826.jpg",
     title: "Blinking Planetary Nebula (NGC 6826)",
     tags: {
       focalLength: "2000mm",
@@ -368,7 +368,7 @@ export const images: ImageData[] = [
   },
   {
     id: "12",
-    src: "src/assets/m57.jpg",
+    src: "/assets/m57.jpg",
     title: "Ring Planetary Nebula (M 57)",
     tags: {
       focalLength: "2000mm",
@@ -387,7 +387,7 @@ export const images: ImageData[] = [
   },
   {
     id: "13",
-    src: "src/assets/ngc_6888.jpg",
+    src: "/assets/ngc_6888.jpg",
     title: "Crescent Nebula (NGC 6888)",
     tags: {
       focalLength: "2000mm",
@@ -406,7 +406,7 @@ export const images: ImageData[] = [
   },
   {
     id: "14",
-    src: "src/assets/C30.jpg",
+    src: "/assets/C30.jpg",
     title: "Deer Lick Group (C 30)",
     tags: {
       focalLength: "2000mm",
@@ -420,7 +420,26 @@ export const images: ImageData[] = [
       "Filters": "None",
       "Sky Darkness": "21.5 mag/arcsec²",
       "Seeing": "Great (5/5)",
-      "Transparency": "Good (4/5)"
+      "Transparency": "Good (/5)"
+    }
+  },
+  {
+    id: "15",
+    src: "/assets/NZ7_4242.jpg",
+    title: "Ehden Milky Way",
+    tags: {
+      focalLength: "16mm",
+      targetType: "Galaxy",
+      equipment: "Mirrorless Camera + Lens",
+      location: "Ehden, Lebanon"
+    },
+    exif: {
+      "Exposure": "30s",
+      "Date": "8-31-2024",
+      "Filters": "None",
+      "Sky Darkness": "21.3 mag/arcsec²",
+      "Seeing": "Great (5/5)",
+      "Transparency": "Great (5/5)"
     }
   }
   // Add more images here

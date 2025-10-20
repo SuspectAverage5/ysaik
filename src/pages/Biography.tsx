@@ -35,7 +35,7 @@ const Biography = () => {
               <br></br>
               <div className="border-t pt-6">
                 <h3 className="font-semibold mb-3 text-foreground text-xl">Where you can see more of my work</h3>
-                  <b className="text-xl hover:text-blue-300 transition-all duration-600"><a href="https://www.instagram.com/yasaik_"><img src="src/assets/insta.png" width="7%" height="7%" className="md:w-7% md:h-7%"></img><br></br>→ Instagram @yasaik_ <br></br><br></br><img src="src/assets/watermark.png"></img></a></b>
+                  <b className="text-xl hover:text-blue-300 transition-all duration-600"><a href="https://www.instagram.com/yasaik_"><img src="/assets/insta.png" width="7%" height="7%" className="md:w-7% md:h-7%"></img><br></br>→ Instagram @yasaik_ <br></br><br></br><img src="/assets/watermark.png"></img></a></b>
               </div>
             </div>
           </div>

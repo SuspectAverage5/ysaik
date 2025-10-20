@@ -1,5 +1,5 @@
 import { aboutMe } from "@/data/portfolio";
-import heroBg from "@/assets/M42.jpg";
+import heroBg from "/assets/M42.jpg";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
