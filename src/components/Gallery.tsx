@@ -127,7 +127,7 @@ export const Gallery = () => {
               Ariz, Lebanon
         </h3>
         <div className="flex justify-center mb-[30px]">
-          <iframe className="w-[100%] h-[80vh] rounded-xl" src="https://momento360.com/e/u/0ae456b2283d438886f59a54d3267053?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true" allowFullScreen allow="fullscreen"></iframe>
+          <iframe className="w-[100%] h-[80vh] rounded-xl" src="https://momento360.com/e/u/0ae456b2283d438886f59a54d3267053?utm_campaign=embed&utm_source=other&heading=-127.48&pitch=22.95&field-of-view=61&size=medium&display-plan=true" allowFullScreen allow="fullscreen"></iframe>
         </div>
         <div className="flex justify-center mb-[30px]">
           <img src="/assets/8-23-25 little planet.png"></img>
